@@ -1,0 +1,15 @@
+<resources>
+    <declare-styleable name="DrawingView">
+        <attr name="drawingColor" format="color" />
+        <attr name="penWidth" format="float" />
+    </declare-styleable>
+    <declare-styleable name="StrokeWidthListView">
+        <attr name="minStrokeSize" format="integer" />
+        <attr name="selectedStrokeSize" format="integer" />
+        <attr name="maxStrokeSize" format="integer" />
+        <attr name="stepSize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ColorListView">
+        <attr name="colorHeight" format="integer" />
+    </declare-styleable>
+</resources>

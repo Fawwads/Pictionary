@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pictionary</string>
+    <string name="create_room">Create Room</string>
+    <string name="join_room">Join Room</string>
+    <string name="credits">Credits</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="start">Start</string>
+    <string name="share_link">Share Link</string>
+    <string name="turn">TURN</string>
+    <string name="host">HOST</string>
+    <string name="enter_code">Enter code</string>
+    <string name="copy_room_code">Copy Room Code</string>
+</resources>

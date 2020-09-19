@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="150dp"
+    android:background="@color/white"
+    android:paddingStart="@dimen/margin"
+    android:paddingEnd="@dimen/margin"
+    android:paddingTop="@dimen/margin_big"
+    android:paddingBottom="@dimen/margin_big"
+    >
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_negative"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:minHeight="0dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:stateListAnimator="@null"
+        android:text="Cancel"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_positive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_message" />
+
+    <Button
+        android:id="@+id/btn_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:backgroundTint="@color/colorAccent"
+        android:minHeight="0dp"
+        android:text="Yes"
+        android:layout_marginStart="30dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:stateListAnimator="@null"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_negative"
+        app:layout_constraintTop_toBottomOf="@id/tv_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

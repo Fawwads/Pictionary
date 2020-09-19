@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.screens.DrawingActivity">
+
+
+    <com.fawwad.pictionary.ui.views.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/toggleControls"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:padding="10dp"
+        android:background="#dddddd"
+        android:src="@drawable/ic_expand_more" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandableControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/icon_size">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#dddddd"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:id="@+id/toggleBrush"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:padding="@dimen/icon_padding"
+                    android:src="@drawable/ic_brush" />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableStrokeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.fawwad.pictionary.ui.views.StrokeWidthListView
+                        android:id="@+id/strokeView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:maxStrokeSize="50"
+                        app:minStrokeSize="10"
+                        app:stepSize="5" />
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:id="@+id/toggleColor"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:padding="@dimen/icon_padding"
+                    android:src="@drawable/ic_color_lens" />
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableColorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.fawwad.pictionary.ui.views.ColorListView
+                        android:id="@+id/colorView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:colorHeight="50"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/erase"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:padding="@dimen/icon_padding"
+                android:src="@drawable/ic_eraser" />
+
+        </LinearLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+</FrameLayout>

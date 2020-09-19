@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    app:alignItems="center"
+    app:flexWrap="wrap">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        tools:text="Fawwad Shaikh"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/quicksand_medium"
+        tools:text="15 pts"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_is_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/quicksand_medium"
+        android:padding="5dp"
+        android:text="@string/host"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_is_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/quicksand_medium"
+        android:padding="5dp"
+        android:text="@string/turn"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</com.google.android.flexbox.FlexboxLayout>

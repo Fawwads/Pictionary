@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <View
+        android:id="@+id/view_stroke_width_background"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/stroke_width_background" />
+
+    <View
+        android:id="@+id/view_stroke_width_foreground"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/stroke_width_foreground" />
+
+</FrameLayout>

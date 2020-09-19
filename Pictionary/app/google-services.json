@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "134134156133",
+    "firebase_url": "https://pictionary-a37d9.firebaseio.com",
+    "project_id": "pictionary-a37d9",
+    "storage_bucket": "pictionary-a37d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134134156133:android:876ec8cd483b7b501faf8c",
+        "android_client_info": {
+          "package_name": "com.fawwad.pictionary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134134156133-pjjoqhf734bh1v5ocq3pa00c3kn9md18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJAeRfDhzwYVV4n1r_3d64Fgjj7GbbUfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134134156133-pjjoqhf734bh1v5ocq3pa00c3kn9md18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
